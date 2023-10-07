@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Croissant+One&family=Satisfy&display=swap');
+
+
 /* .card{
     transition: transform .2s ease;
     
@@ -8,7 +11,17 @@
 } */
 body {
   position: relative;
+  background-color: #264653;
 }
+.nav-container{
+  font-family: 'Akaya Telivigala', cursive;
+}
+.navbar-brand{
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 /* shape CSS */
 .custom-shape-divider-bottom-1696575295 {
   position: absolute;
@@ -36,8 +49,9 @@ body {
   font-size: 16px;
 }
 .movie-card-name >button{
+  font-family: 'Croissant One', cursive;
   letter-spacing: 1px;
-  background-color: darkorange;
+  background-color: #bc6c25;
   cursor: pointer;
   color: #fff;
   border: none;
@@ -48,9 +62,20 @@ body {
   background-color: #fff;
   color: black;
 }
-.movie-card {
-  background-color: rgb(18, 117, 48);
+
+.card-text{
+  height: 160px;
+  overflow: hidden;
 }
-.img-hover{
-  background-color: red;
+
+
+.rating-content{
+  font-size: 16px;
+  background-color: #cc3363;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.imdb{
+  height: 30px;
 }

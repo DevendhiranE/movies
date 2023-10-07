@@ -12,13 +12,21 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="nav-container">
       <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
-          <a class="navbar-brand text-white" href="#">MOVIESHUB</a>
+          <a class="navbar-brand text-white" href="#"
+            ><i class="fa-solid fa-clapperboard mx-3"></i>MOVIESHUB</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -35,9 +43,7 @@
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >HOME</a
-              >
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
               <a class="nav-link text-white" href="#">ACTION</a>
               <a class="nav-link text-white" href="#">ROMANTIC</a>
               <a class="nav-link text-white" href="#">HORROR</a>
@@ -46,13 +52,8 @@
         </div>
       </nav>
     </div>
-    <!-- top-content-start -->
-    <div class="container top-content bg-secondary text-white my-3 p-2 rounded">
-      சித்த மருத்துவம் என்பது தென்னிந்திய தமிழ் மருத்துவ முறையாகும். பண்டைச் சித்தர்கள், இதனை உருவாக்கித் தந்துள்ளார்கள். சித்தர்கள் தங்கள் அனுபவ அறிவால் அதனை நன்குணர்ந்து மிகவும் துல்லியமாகக் கூறியுள்ளனர். சித்த மருத்துவம் எப்போது தோன்றியது என்று வரையறுத்துக் கூறவியலாது. அது பாரம்பரிய மரபு முறைப்படி பரவி வந்துள்ளது.
-    </div>
-    <!-- top-content-End -->
     <!-- shape divider start -->
-    <div class="shape-divider">
+    <!-- <div class="shape-divider">
       <div class="custom-shape-divider-bottom-1696575295">
         <svg
           data-name="Layer 1"
@@ -66,29 +67,29 @@
           ></path>
         </svg>
       </div>
-    </div>
+    </div> -->
     <!-- End shape divider -->
     <!-- carousel Start -->
     <div class="carousel-part container mt-5">
       <div id="carouselExample" class="carousel slide carousel-fade">
         <div class="carousel-inner">
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <img
-              src="./assets/img/siddha-1.jpg"
+              src="./assets/img/action-dinosers.webp"
               class="d-block w-100"
               alt="Siddha-1"
             />
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img
-              src="./assets/img/siddha-2.jpg"
+              src="./assets/img/lucky-man.webp"
               class="d-block w-100"
               alt="siddha-2"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/img/siddha-3.jpg"
+              src="./assets/img/aneethi.webp"
               class="d-block w-100"
               alt="siddha-3"
             />
@@ -119,26 +120,47 @@
     <!-- Movie Card Start -->
     <div class="movie-card container my-5">
       <div class="movie-card-name d-inline-block p-1 my-2 rounded">
-        <button class="btn">Lattest Post</button>
+        <button class="btn">Lattest Movies</button>
       </div>
       <div
-        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-3 text-center "
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-3 text-center"
       >
         <div class="col">
           <div class="card h-100">
             <img
-              src="./assets/img/siddha-4.jpg"
+              src="./assets/img/Chandramukhi-2-Movie.webp"
               class="card-img-top img-hover"
               alt="Chandramuki-2"
             />
             <div class="card-body">
               <h5 class="card-title">Chandramuki-2</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.Some quick example text to build
-                on the card title and make up the bulk of the card's content.
+                A wealthy family faces numerous problems and reunites with their
+                long-lost relatives to pray to their deity for solutions,
+                unaware it will reawaken the feud between a classical dancer,
+                Chandramukhi and Vettaiyan Raja from centuries ago.
               </p>
-              <a href="#" class="btn btn-primary">Watch Here</a>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">3.6 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt12132908/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
             </div>
           </div>
         </div>
@@ -146,17 +168,39 @@
         <div class="col">
           <div class="card h-100">
             <img
-              src="./assets/img/siddha-5.gif"
+              src="./assets/img/iraivan.jpg"
               class="card-img-top"
               alt="Iraivan"
             />
             <div class="card-body">
               <h5 class="card-title">Iraivan</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                A city lives in fear of a psychotic killer, and confidence in
+                the police wanes. Arjun and Andrew finally arrest the killer,
+                but he escapes and chaos reigns again.It's a good thriller movie
+                with lot of twists and turns.
               </p>
-              <a href="#" class="btn btn-primary">Watch Here</a>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">5.2 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt26316907/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
             </div>
           </div>
         </div>
@@ -164,41 +208,251 @@
         <div class="col">
           <div class="card h-100">
             <img
-              src="./assets/img/siddha-6.jpg"
+              src="./assets/img/sitthaa.jpg"
               class="card-img-top"
               alt="Iraivan"
             />
             <div class="card-body">
               <h5 class="card-title">Sittha</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Chithha is a 2023 Indian Tamil-language drama film written and
+                directed by S. U. Arun Kumar. A man is raising his niece like
+                his own daughter, and everything appears normal in their life
+                until the little girl goes missing.
               </p>
-              <a href="#" class="btn btn-primary">Watch Here</a>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">8.5 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt27540185/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="col">
           <div class="card h-100">
             <img
-              src="./assets/img/siddha-7.jpg"
+              src="./assets/img/kick.webp"
               class="card-img-top"
               alt="Iraivan"
             />
             <div class="card-body">
-              <h5 class="card-title">Sittha</h5>
+              <h5 class="card-title">Kick Tamil Movie</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                A young advertisement director suddenly has the chance to take
+                over a global corporation by masquerading as the fake son of the
+                CEO. While being chased out by angry investors.
               </p>
-              <a href="#" class="btn btn-primary">Watch Here</a>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">5.6 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt22069414/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Movie Card End -->
+
+    <!-- Action Movie Card -->
+    <div class="movie-card container my-5">
+      <div class="movie-card-name d-inline-block p-1 my-2 rounded">
+        <button class="btn action-btn">Action Movies</button>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-3 text-center"
+      >
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/img/action-dinosers.webp"
+              class="card-img-top img-hover"
+              alt="Chandramuki-2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dinosaurs</h5>
+              <p class="card-text">
+                An unforgivable and outrageous act manipulated by a notorious
+                gangster Salaiyar leads to a raging feud between him and an
+                intrepid youngster Mannu.
+              </p>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">8.4 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt27598618/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/img/action-kgf.webp"
+              class="card-img-top"
+              alt="Iraivan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">KGF-2</h5>
+              <p class="card-text">
+                In the blood-soaked Kolar Gold Fields, Rocky's name strikes fear
+                into his foes. While his allies look up to him, the government
+                sees him as a threat to law and order. Rocky must battle threats
+                from all sides for unchallenged supremacy.
+              </p>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">8.3 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt10698680/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/img/action-master.webp"
+              class="card-img-top"
+              alt="Iraivan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Master</h5>
+              <p class="card-text">
+                An alcoholic professor is sent to a juvenile school, where he
+                clashes with a gangster who uses the school children for
+                criminal activities.
+              </p>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">7.3 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt10579952/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./assets/img/action-pushpa.webp"
+              class="card-img-top"
+              alt="Iraivan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pushpa Tamil Movie</h5>
+              <p class="card-text">
+                A labourer rises through the ranks of a red sandal smuggling
+                syndicate, making some powerful enemies in the process.
+              </p>
+              <div class="rating-div">
+                <div
+                  class="rating-content d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/img/imdb.png"
+                    alt="IMDB Image"
+                    class="imdb"
+                  />
+                  <span class="mx-3 badge bg-success">Ratings</span
+                  ><i class="fa-solid fa-star" style="color: #f1e909"
+                    ><span class="ms-3">7.6 / 10</span></i
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.imdb.com/title/tt9389998/"
+                target="_blank"
+                class="btn btn-primary"
+                >Watch Here</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Action Movie Card -->
     <!-- Bootstrap JS file -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
