@@ -1,0 +1,56 @@
+/* .card{
+    transition: transform .2s ease;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    margin: 10px;
+} */
+body {
+  position: relative;
+}
+/* shape CSS */
+.custom-shape-divider-bottom-1696575295 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1696575295 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696575295 .shape-fill {
+  fill: #fffefe;
+}
+/* end shape CSS */
+.top-content{
+  text-align: justify;
+  font-size: 16px;
+}
+.movie-card-name >button{
+  letter-spacing: 1px;
+  background-color: darkorange;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.movie-card-name:hover {
+  background-color: #fff;
+  color: black;
+}
+.movie-card {
+  background-color: rgb(18, 117, 48);
+}
+.img-hover{
+  background-color: red;
+}
