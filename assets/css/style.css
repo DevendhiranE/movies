@@ -79,3 +79,13 @@ body {
 .imdb{
   height: 30px;
 }
+.footer{
+  height: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer a{
+text-decoration: none;
+color:black;
+font-weight: bold;
+}
